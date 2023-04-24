@@ -8,6 +8,12 @@ CREATE TABLE IF NOT EXISTS musicians (
 	name VARCHAR(60) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS alboms (
+	alboms_id  SERIAL PRIMARY KEY,
+	name VARCHAR(60) NOT NULL,
+	year date NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS tracks (
 	tracks_id SERIAL PRIMARY KEY,
 	name VARCHAR(60) NOT NULL,
@@ -15,11 +21,6 @@ CREATE TABLE IF NOT EXISTS tracks (
 	duration INTEGER NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS alboms (
-	alboms_id  SERIAL PRIMARY KEY,
-	name VARCHAR(60) NOT NULL,
-	year date NOT NULL
-);
 
 CREATE TABLE IF NOT EXISTS musician_styles (
 	style_id INTEGER REFERENCES styles(style_id),
@@ -33,7 +34,6 @@ CREATE TABLE IF NOT EXISTS musicians_alboms (
 
 CREATE TABLE IF NOT EXISTS collection (
 	collection_id  SERIAL PRIMARY KEY,
-	tracks_id INTEGER NOT NULL REFERENCES tracks(tracks_id),
 	name VARCHAR(60) NOT NULL,
 	year date NOT NULL
 );

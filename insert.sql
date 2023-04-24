@@ -1,140 +1,120 @@
-insert into collection (tracks_id, name, year)
-values (7, 'сборник 30', ('2019-07-15'))
-insert into collection (tracks_id, name, year)
-values (8, 'сборник 30', ('2019-07-15'))
-insert into collection (tracks_id, name, year)
-values (15, 'сборник 30', ('2019-07-15'))
-insert into collection_tracks (tracks_id, collection_id)
-values (7, 11)
-insert into musicians (name)
-values ('Артист 1')
-insert into musicians (name)
-values ('Артист 2')
-insert into musicians (name)
-values ('Артист 3')
-insert into musicians (name)
-values ('Артист 4')
-insert into musicians (name)
-values ('Артист 5')
-insert into musicians (name)
-values ('Артист 6')
-insert into musicians (name)
-values ('Артист 7')
-insert into musicians (name)
-values ('Артист 8')
-insert into musicians (name)
-values ('Богдан')
-insert into alboms (name, year)
-values ('альбом1', ('2018-08-29'))
-insert into musicians_alboms (alboms_id, musician_id)
-values (4, 5)
-insert into musicians_alboms (alboms_id, musician_id)
-values (4, 4)
-insert into musicians_alboms (alboms_id, musician_id)
-values (4, 3)
-insert into musicians_alboms (alboms_id, musician_id)
-values (4, 2)
-insert into musicians_alboms (alboms_id, musician_id)
-values (4, 3)
-insert into musicians_alboms (alboms_id, musician_id)
-values (5, 3)
-insert into collection_tracks (tracks_id, collection_id)
-values (5, 3)
-insert into collection_tracks (tracks_id, collection_id)
-values (4, 3)
-insert into collection_tracks (tracks_id, collection_id)
-values (4, 2)
-insert into collection_tracks (tracks_id, collection_id)
-values (3, 2)
-insert into collection_tracks (tracks_id, collection_id)
-values (2, 2)
-insert into collection_tracks (tracks_id, collection_id)
-values (2, 1)
-insert into collection_tracks (tracks_id, collection_id)
-values (2, 'сборник 2', ('2022-04-05'))
-insert into collection_tracks (tracks_id, collection_id)
-values (2, 'сборник 2', ('2022-04-05'))
-insert into collection (tracks_id, name, year)
-values (2, 'сборник 4', ('2022-04-05'))
-insert into collection (tracks_id, name, year)
-values (4, 'сборник 4', ('2022-04-05'))
-insert into collection (tracks_id, name, year)
-values (4, 'сборник 3', ('2022-05-05'))
-insert into collection (tracks_id, name, year)
-values (4, 'сборник 2', ('2022-06-05'))
-insert into collection (tracks_id, name, year)
-values (3, 'сборник 2', ('2022-06-05'))
-insert into collection (tracks_id, name, year)
-values (3, 'сборник 1', ('2022-07-05'))
-insert into collection (tracks_id, name, year)
-values (2, 'сборник 1', ('2022-07-05'))
-insert into collection (tracks_id, name, year)
-values (1, 'сборник 1', ('2022-07-05'))
-insert into collection (tracks_id, name, year)
-values (4, 'сборник 20', ('2019-04-05'))
-insert into collection (tracks_id, name, year)
-values (4, 'сборник 21', ('2018-04-05'))
-insert into tracks (name, albom, duration)
-values ('трек15', 4, 400)
-insert into tracks (name, albom, duration)
-values ('трек14', 3, 400)
-insert into tracks (name, albom, duration)
-values ('трек13', 2, 400)
-insert into tracks (name, albom, duration)
-values ('трек12', 3, 400)
-insert into tracks (name, albom, duration)
-values ('мой трек', 4, 450)
-insert into tracks (name, albom, duration)
-values ('my track', 4, 460)
-insert into tracks (name, albom, duration)
-values ('трек11', 3, 400)
-insert into tracks (name, albom, duration)
-values ('трек10', 4, 400)
-insert into tracks (name, albom, duration)
-values ('трек9', 3, 400)
-insert into tracks (name, albom, duration)
-values ('трек8', 2, 400)
-insert into tracks (name, albom, duration)
-values ('трек7', 4, 400)
-insert into tracks (name, albom, duration)
-values ('трек6', 3, 400)
-insert into tracks (name, albom, duration)
-values ('трек18', 4, 500)
-insert into tracks (name, albom, duration)
-values ('трек5', 2, 400)
-insert into tracks (name, albom, duration)
-values ('трек4', 5, 400)
-insert into tracks (name, albom, duration)
-values ('трек3', 4, 400)
-insert into tracks (name, albom, duration)
-values ('трек2', 3, 200)
-insert into tracks (name, albom, duration)
-values ('трек1', 2, 100)
-insert into alboms (name, year)
-values ('альбом4', ('2022-01-25'))
-insert into alboms (name, year)
-values ('альбом3', ('2022-01-25'))
-insert into alboms (name, year)
-values ('альбом2', ('2022-02-25'))
-insert into alboms (name, year)
-values ('альбом1', ('2022-08-29'))
+insert into 
+alboms  (name, year)
+values 
+('сборник 32', '2012-07-15'),
+('сборник 33', '2012-08-15'),
+('сборник 34', '2012-09-15'),
+('альбом1', '2018-08-29'),
+('альбом4', '2022-01-25'),
+('альбом3', '2022-01-25'),
+('альбом2', '2019-02-25'),
+('альбом1', '2022-08-29');
 
 
-insert into musician_styles (style_id , musician_id)
-values (3, 4)
+insert into 
+tracks (name, albom, duration)
+values 
+('трек15', 4, 400),
+('трек14', 3, 400),
+('трек13', 2, 400),
+('трек12', 3, 400),
+('мой трек', 4, 450),
+('my track', 4, 460,)
+('трек11', 3, 400),
+('трек10', 4, 400),
+('трек9', 3, 400),
+('трек8', 2, 400),
+('трек7', 4, 400),
+('трек6', 3, 400),
+('трек18', 4, 500),
+('трек5', 2, 400),
+('трек4', 5, 400),
+('трек3', 4, 400),
+('трек2', 3, 200),
+('трек1', 2, 100);
 
-insert into musician_styles (style_id , musician_id)
-values (2, 4)
-insert into musician_styles (style_id , musician_id)
-values (2, 3)
-insert into musician_styles (style_id , musician_id)
-values (2, 2)
 
-insert into musician_styles (style_id , musician_id)
-values (3, 5)
+insert into 
+collection (tracks_id, name, year)
+values 
+(2, 'сборник 1', '2022-07-05'),
+(3, 'сборник 1', '2022-07-05'),
+(3, 'сборник 2', '2022-06-05'),
+(4, 'сборник 3', '2022-05-05'),
+(4, 'сборник 4', '2022-04-05'),
+(3, 'сборник 4', '2022-04-05'),
+(2, 'сборник 2', '2022-04-05'),
+(4, 'сборник 20', '2019-04-05'),
+(4, 'сборник 21', '2019-04-05'),
+(7, 'сборник 30', '2019-07-15'),
+(8, 'сборник 30', '2019-07-15'),
+(15, 'сборник 30', '2019-07-15');
 
-insert into musician_styles (style_id , musician_id)
-values (3, 3)
 
-insert into musicians_alboms (alboms_id, musician_id)
-values (2, 2)
+insert into 
+musicians (name)
+values 
+('Артист 1'),
+('Артист 2'),
+('Артист 3'),
+('Артист 4'),
+('Артист 5'),
+('Артист 6'),
+('Артист 7'),
+('Артист 8'),
+('Богдан');
+
+
+insert into 
+musicians_alboms (alboms_id, musician_id)
+values 
+(4, 5),
+(4, 4),
+(4, 3),
+(4, 2),
+(4, 3),
+(5, 3),
+(2, 2);
+
+insert into 
+collection_tracks (tracks_id, collection_id)
+values 
+(5, 3),
+(4, 3),
+(4, 2),
+(3, 2),
+(2, 2),
+(7, 11),
+(2, 1);
+
+
+insert into 
+collection (name, year)
+values 
+('сборник 2', '2022-04-05'),
+('сборник 2', '2022-04-05'),
+('сборник 4', '2022-04-05'),
+('сборник 4', '2022-04-05'),
+('сборник 3', '2022-05-05'),
+('сборник 2', '2022-06-05'),
+('сборник 2', '2022-06-05'),
+('сборник 1', '2022-07-05'),
+('сборник 1', '2022-07-05'),
+('сборник 1', '2022-07-05'),
+('сборник 20', '2019-04-05'),
+('сборник 21', '2018-04-05');
+
+
+
+
+
+
+insert into 
+musician_styles (style_id , musician_id)
+values 
+(3, 4),
+(2, 4),
+(2, 3),
+(2, 2),
+(3, 5),
+(3, 3);
